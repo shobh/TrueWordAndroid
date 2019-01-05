@@ -89,8 +89,10 @@ public class Utils {
             for (int i = 0; i < count ; i++) {
                 String author = ((JSONObject)arr.get(i)).optString("author");
                 String quote = ((JSONObject)arr.get(i)).optString("quote");
-                Quotes item = new Quotes(quote, author);
-                ar.add(item);
+                if (quote.length() < 450) {
+                    Quotes item = new Quotes(quote, author);
+                    ar.add(item);
+                }
             }
         } catch (JSONException e) {
             e.printStackTrace();

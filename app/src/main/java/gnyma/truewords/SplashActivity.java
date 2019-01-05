@@ -26,7 +26,7 @@ public class SplashActivity extends AppCompatActivity implements MVPInterface.Sp
 
     @Override
     public void fetchFailed() {
-        Toast.makeText(this, "Error connecting to server", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Wifi lagwao, network nahi aa raha tumhare paas", Toast.LENGTH_LONG).show();
         finish();
     }
 

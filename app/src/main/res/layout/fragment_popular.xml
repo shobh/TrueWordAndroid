@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".View.Fragments.PopularFragment">
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/share_whatsapp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/whatsapp_share"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/button_pressed"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/search_web"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search_icon"
+            android:tint="@android:color/white"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/button_pressed"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/bottom_bar"
+        android:id="@+id/cPager">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

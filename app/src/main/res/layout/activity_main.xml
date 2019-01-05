@@ -8,26 +8,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/a8"
+    android:background="#303030"
     tools:context="gnyma.truewords.SplashActivity">
 
     <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:textColor="@color/cardview_dark_background"
-        android:textStyle="italic"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         android:textSize="36dp"
-        android:text="TRUE   WORD" />
+        android:padding="40dp"
+        android:background="@drawable/bg_round"
+        android:text="true \n word" />
 
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:indeterminate="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/text1"
         android:indeterminateTintMode="src_atop"
-        android:indeterminateTint="@color/cardview_dark_background"
+        android:indeterminateTint="@android:color/primary_text_dark"
         />
 
 </RelativeLayout>
